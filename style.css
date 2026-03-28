@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #3d4152;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logo-section img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.logo-section h1 {
+    font-size: 24px;
+    color: #fc8019;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #3d4152;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links li a:hover {
+    color: #fc8019;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #282c3f;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    width: 30%;
+    padding: 15px;
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e07015;
+}
+
+/* Main Content Area */
+.container {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #282c3f;
+    border-left: 5px solid #fc8019;
+    padding-left: 15px;
+}
+
+/* Grid Layout for Food Items */
+.food-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.food-card {
+    background-color: white;
+    width: calc(25% - 22.5px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .food-card {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .food-card {
+        width: calc(50% - 15px);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Hide for simplicity on mobile */
+    .hero-text h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .food-card {
+        width: 100%;
+    }
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.food-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #282c3f;
+}
+
+.card-origin {
+    font-size: 13px;
+    color: #686b78;
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: #535665;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e9e9eb;
+    padding-top: 15px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3d4152;
+}
+
+.add-btn {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #d4d5d9;
+    color: #60b246;
+    /* Swiggy Add Button Green */
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #60b246;
+    color: white;
+    border-color: #60b246;
+}
+
+/* Footer */
+footer {
+    background-color: #02060c;
+    color: white;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    color: #fc8019;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #a9abb2;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #282c3f;
+    padding-top: 20px;
+    text-align: center;
+    color: #a9abb2;
+    font-size: 14px;
+}

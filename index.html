@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone - Local Delicacies</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <img id="dynamic-logo" src="assets/swiggy_logo_1774619654077.png" alt="Swiggy Clone Logo"
+                onerror="this.src='https://via.placeholder.com/50/fc8019/ffffff?text=SC'">
+            <h1>DeliverJoy</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fas fa-percentage"></i> Offers</a></li>
+                <li><a href="#"><i class="far fa-life-ring"></i> Help</a></li>
+                <li><a href="#"><i class="far fa-user"></i> Sign In</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img id="dynamic-hero" src="assets/hero_banner_1774619723010.png" alt="South Indian Feast Banner"
+            onerror="this.src='https://via.placeholder.com/1200x400/282c3f/ffffff?text=South+Indian+Feast'">
+        <div class="hero-text">
+            <h2>Authentic Local Cuisine</h2>
+            <p>Craving the spiciest and most flavorful dishes? We've got you covered!</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for Biryani, Haleem, Bajji...">
+                <button>FIND FOOD</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Famous Dishes near you</h2>
+
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="card-image">
+                    <img id="img-biryani" src="assets/dish_biryani_1774619798014.png" alt="Hyderabadi Dum Biryani"
+                        onerror="this.src='https://via.placeholder.com/300x200/fc8019/ffffff?text=Biryani'">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Hyderabadi Dum Biryani</h3>
+                    <p class="card-desc">World-famous aromatic basmati rice cooked with tender marinated meat and
+                        traditional spices.</p>
+                    <div class="card-footer">
+                        <span class="price">₹ 350</span>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card-image">
+                    <img id="img-mutton" src="assets/dish_gongura_1774619864035.png" alt="Gongura Mutton"
+                        onerror="this.src='https://via.placeholder.com/300x200/fc8019/ffffff?text=Gongura+Mutton'">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Gongura Mutton</h3>
+                    <p class="card-desc">A fiery and tangy curry made with tender mutton and fresh sorrel leaves. Best
+                        with rice!</p>
+                    <div class="card-footer">
+                        <span class="price">₹ 420</span>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card-image">
+                    <img id="img-putharekulu" src="assets/dish_putharekulu_1774619931553.png" alt="Putharekulu"
+                        onerror="this.src='https://via.placeholder.com/300x200/fc8019/ffffff?text=Putharekulu'">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Atreyapuram Putharekulu Sweet</h3>
+                    <p class="card-desc">A delicate, melt-in-the-mouth paper-thin sweet filled with sugar, dry fruits,
+                        and pure ghee.</p>
+                    <div class="card-footer">
+                        <span class="price">₹ 150</span>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card-image">
+                    <img id="img-bajji" src="assets/dish_bajji_1774619994951.png" alt="Mirchi Bajji"
+                        onerror="this.src='https://via.placeholder.com/300x200/fc8019/ffffff?text=Mirchi+Bajji'">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Mirchi Bajji</h3>
+                    <p class="card-desc">Crispy and spicy deep-fried green chili fritters stuffed with tamarind mix and
+                        raw onions.</p>
+                    <div class="card-footer">
+                        <span class="price">₹ 60</span>
+                        <button class="add-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>DeliverJoy</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund & Cancellation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; JRS</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
